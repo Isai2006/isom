@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LA FAMILIA</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(199, 198, 196);
+        }
+        .imgig {
+            position: fixed;
+            background-color: azure;
+            z-index: 4;
+            font-size: 40px;
+            margin: 10px;
+            border: 5px solid orange;
+            font-family: Bell MT;
+
+        }
+        #lf {
+            background-color: azure;
+            height: 130px;
+            text-align: center;
+        }
+        .t1 {
+            margin: 0;
+            padding: 0 1rem;
+            font-family: Margetta Free Version;
+            color: rgb(42, 52, 77);
+            font-size: 80px;
+        }
+        .img1 {
+            width: 100%;
+            background-color: rgb(42, 52, 77);
+        }
+        .t2 {
+            text-align: center;
+            font-family: Gabriola;
+            color: rgba(128, 67, 48, 0.801);
+            font-size: 35px;
+            background-color: rgba(189, 151, 140);
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 13px;
+            border-top: 5px solid rgb(128, 67, 48, 0.801);
+            border-bottom: 5px solid rgb(42, 52, 77);
+        }
+        .p1 {
+            text-align: justify;
+            font-size: 20px;
+            margin-left: 130px;
+            margin-right: 130px;
+            line-height: 2em;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+                    
+        }
+        }
+        .red {
+            color: brown;
+        }
+        em.red {
+            border-bottom: 5px solid brown;
+        }        
+        .indice {
+            text-align: center; 
+            background-color: rgba(42, 52, 77);
+            color: rgb(69, 190, 206, 0.726); 
+            line-height: 1em;                                        
+        }
+        .indtab {
+            font-size: 30px;            
+        }
+        .li1 {
+            line-height: 2.5em;
+            margin-left: 60px;
+            font-size: 18px;  
+            padding-right: 10px;
+            }
+        .subt1, #libros {
+            background-color: rgba(42, 52, 77);
+            font-family: Gabriola;
+            color: rgb(240, 239, 239);
+            font-size: 40px;
+            font-weight: bold;
+            padding-top: 13px;
+            padding-bottom: 6px; 
+            border-top: 10px solid rgba(69, 190, 206, 0.726);  
+            border-bottom: 10px solid rgb(69, 190, 206, 0.726);             
+        }
+        span {
+            color: rgb(69, 190, 206, 0.726);
+        }
+
+        #img-1 {
+            width: 180px;
+            float: left;
+            margin-right: 400px;
+            margin-left: 60px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .p2 {
+            text-align: justify;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 30px;
+            line-height: 1.8em;
+        }
+        .p3 {
+            text-align: center;
+            background-color: rgba(167, 194, 230, 0.5);
+            font-size: 25px;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 1.8em;  
+            padding-bottom: 30px;          
+        }
+        #img-2 {
+            width: 180px;
+            float: left;
+            margin-right: 400px;
+            margin-left: 60px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .p4 {
+            text-align: justify;
+            font-size: 25px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 30px;
+            
+            line-height: 1.8em;
+        }
+        #img-3 {
+            width: 180px;
+            float: left;
+            margin-right: 400px;
+            margin-left: 60px;
+            padding-top: 30px;
+            padding-bottom: 30px;            
+        }
+        .p5 {
+            text-align: justify;
+            font-size: 25px;
+            margin-left: 50px;
+            margin-right: 50px;
+            width: 93%;
+            padding-top: 30px;
+            line-height: 1.8em;
+        }
+        #resumen {
+            background: rgb(230, 230, 230);
+            width: 1000px;
+            height: 500px;
+            overflow-y: auto;            
+            text-align: justify;
+            font-size: 25px;                       
+            margin-top: 60px; 
+            border-top: 10px double rgba(61, 13, 80, 0.603);
+            border-bottom: 10px double rgb(61, 13, 80, 0.603);
+            line-height: 1.8em;
+            padding-bottom: 30px;
+            padding-right: 20px;
+            padding-left: 30px;
+        }   
+        #tab2 {
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-right: 30px; 
+            border: 10px solid rgba(42, 52, 77);
+            
+        }          
+        .td1, .th1 {
+            background-color: ;
+            border-top: 5px solid rgba(42, 52, 77);
+            
+            border-collapse: collapse;
+            text-align: center;
+            padding-top: 13px;
+            padding-bottom: 15px;            
+            font-size: 20px;           
+        }
+        .IM {
+            font-family: Kunstler Script;
+            color: rgb(15, 57, 112);
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .familiaisa {
+            font-family: Gabriola;
+            color: rgb(15, 57, 112);
+            font-size: 40px;
+            text-align: right;
+            padding-right: 50pt;
+            padding-bottom: 10px;        
+        }
+        .fin {
+            background-color: rgba(42, 52, 77); 
+        }
+        a:hover { 
+                background-color: rgb(255, 214, 255);
+            }  
+        a:active {
+                background-color: rgb(230, 140, 230);
+            } 
+        a:focus {
+                background-color: rgb(255, 214, 255);
+        }        
+    </style>
+</head>
+<body>
+    <h1 class="imgig"><a href="#dvindice">índice</h1></a></h1>
+    <div id="lf">
+        <H1 class="t1">La Familia</H1>
+    </div>
+    <center>
+        <div class="img1"><br><br>
+            <img src="https://www.eltiempo.com/files/image_640_428/files/crop/uploads/2020/01/05/5e1286b0a6e95.r_1586594812675.0-96-1794-986.jpeg"
+                width="430"><br><br><br>
+    </center>
+    </div>
+    <h2 class="t2">¿Qué dice Dios sobre la família?</h2>
+    <P class="p1"><em class="red">La familia es el núcleo de la sociedad</em>, si no tenemos buenas familias, no tenemos buena
+        sociedad. En génesis se nos muestra, que luego de haberse teminado la creación, la primera familia apareció,
+        <em>"Adán y Eva"</em>, y Dios les dijo multiplíquense; lo cual nos hace pensar que <strong class="red">la
+            familia es
+            realmente importante</strong>,
+        porque Dios la diseñó, así que es necesario que valoremos nuestra familia. ¿Pero cómo? Haciendo lo que Dios dice
+        en su
+        palabra, y en ella encontramos <em>roles</em>, tanto para la mujer, el hombre y los hijos; <strong class="red">
+            Dios estableció orden en la familia.</strong>
+    </p>
+    <table class="tab1">
+        <tbody class="indice">
+            <tr>
+                <td id="dvindice"><br><strong class="indtab">INDICE</strong><br><br></td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>
+                    <lu>
+                        <li class="li1"><a href="#primer-punto">LA ESPOSA Y EL ESPOSO DEBEN AMARSE Y RESPETARSE.</a><br></li>
+                    </lu>
+                </td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>
+                    <lu>
+                        <li class="li1"><a href="#segundo-punto">LOS PADRES NO PROVOQUEN IRA A SUS HIJOS.</a><br></li>
+                    </lu>
+                </td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>
+                    <lu>
+                        <li class="li1"><a href="#tercer-punto">LOS HIJOS DEBEN OBEDECER A SUS PADRES.</a><br></li>
+                    </lu>
+                </td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>
+                    <lu>
+                        <li class="li1"><a href="#cuarto-punto">EN RESUMEN</a><br></li>
+                    </lu>
+                </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>
+                    <lu>
+                        <li class="li1"><a href="#libros">LIBROS RELACIONADOS PARA LEER EN LÍNEA O DESCARGAR EL PDF
+                                GRATIS.</a><br><br></li>
+                    </lu>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<p><br<></p>
+<center><h3 class="subt1" , id="primer-punto"> La <span>ESPOSA</span> y el <span>ESPOSO</span> deben amarse y respetarse
+        .</h3></center>
+    <div id="img-1"><img
+            src="https://cdn0.bodas.com.mx/articles/images/7/4/7/1/img_1747/libro-lectura-pareja-parque.jpg"
+            width="530"></div>
+    <ul class="p2">
+        <li><strong>MUJER.</strong> La biblia enseña a la mujer como debe respetar a su esposo, pero lamentablemente hoy
+            nadie desea buscar de Dios, y por causa de eso vemos muchas mujeres irreverentes, que no aman el diseño que
+            Dios le ha dado; el principio, <strong>la mujer fue creada para: amar, respetar, honrar, ser ayuda
+                idónea</strong>,
+            llena de muchas habilidades, con carácter apacible, duce y tierno. Penosamente hoy encontramos a mujeres que
+            se quejan de todo ya que han descuidan esa parte si tan solo volvieran a ver la escritura y apropiarse de
+            ella amarían el rol tan importante que tienen en la familia.LA MUJER. <br> La biblia enseña a la mujer como
+            debe respetar a su esposo, pero lamentablemente hoy nadie desea
+            buscar de Dios, y por causa de eso vemos muchas mujeres irreverentes, que no aman el diseño que Dios le ha
+            dado; Desde el principio, <em>la mujer fue creada para: amar, respetar, honrar, ser ayuda idónea, llena de
+                muchas habilidades, con carácter apacible, duce y tierno.</em> Penosamente hoy encontramos a mujeres que
+            se quejan de todo ya que han descuidan esa parte <strong>si tan solo volvieran a ver la escritura y
+                apropiarse de ella amarían el rol tan importante que tienen en la familia</strong>.
+        </li><br>
+        <li><strong>HOMBRE</strong>. También vemos a muchos esposos duros que son ásperos en su forma de tratar a sus
+            esposas, que no son delicados, y no le muestran a su esposa el amor que Dios les mandó a demostrar.
+            <strong>Dios creó al hombre con estupendas cualidades</strong> y le otorgó el diseño de ser líder en la
+            creación, eso
+            involucra su matrimonio, pero también <em>le dio la responsabilidad de cuidar, guiar, servir, administrar y
+                que todo eso
+                sea hecho con amor</em>, <strong> tratando a su esposa como el vaso más frágil</strong>; de igual manera
+            si el
+            hombre escudriñara las escrituras, enconaría el verdadero propósito de su diseño y podría ejercer su rol sin
+            abusar
+            de el.
+        </li>
+
+    </ul>
+    <p class="p3">Con respecto a esto dos puntos, tanto el hombre como la mujer hoy se saltan los principios divinos y
+        terminan
+        en fracaso rompiendo el vínculo matrimonial, es por eso que encontramos a un esposo que tiende a liderar sin
+        amor y una esposa que tiende a querer dominar.<br> Por lo tanto si quieren tener un matrimonio solido hay
+        que buscar la guía de Dios.
+    </p>
+    <center>
+        <p><em class="o">Para más información:<a target="_blank"
+                    href="https://gustadadios.com/2019/03/08/esposo-amar-esposa-someterse/">Gustad a
+                    Dios</a></em><br><br>
+    </center>
+    </p>
+    <center><h3 class="subt1" , id="segundo-punto">Los <span>Padres</span> no provoquen ira a sus hijos.</h3></center>
+    <div id="img-2"><img
+            src="https://construyenpais.com/wp-content/uploads/Roberto-Blanco-M%C3%A1s-que-hablar-es-escuchar.jpg"
+            width="530"></div>
+    <p class="p4"> <em>“Y vosotros, padres, no provoquéis a ira a vuestros hijos, sino criadlos en la disciplina e
+            instrucción del Señor”</em> (efesios 6:4) Los padres muchas veces pueden hacer que sus hijos se enojen al
+        momento de
+        corregir sin razones justas, es necesario que los padres tengan bases al momento de amonestar a sus hijos y no
+        solo con enojo ya que por falta de entendimiento de nuestros padres podría tomarse mal la disciplina y en vez de
+        direccionar el corazón de los hijos, causan rebeldía. Es necesario que los padres hagan conciencia en usar la
+        forma correcta para corregir a sus hijos sin provocar ira en ellos, con castigos no adecuados, sino con
+        <strong class="red">bajo control.</strong>
+    </p>
+    <center>
+        <p><em class="o">Para más información:<a target="_blank"
+                    href="https://sdejesucristo.org/padres-no-provoquen-a-sus-hijos/">Soldados de
+                    Jesucristo</a></em><br><br>
+    </center>
+    </p>
+    <center><h3 class="subt1", id="tercer-punto">Los <span>Hijos</span> deben obedecer a sus padres
+        .</h3></center>
+    <div id="img-3"><img
+            src="https://images.squarespace-cdn.com/content/v1/54e76836e4b0c686e90c997e/1516586890527-TTA26FL7J4AR5G1434EE/ke17ZwdGBToddI8pDm48kDrPwNVXYEunyd5GI-T5dTMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcjnGyVxz4_7fGUBBocNlg5GFIaMd2sRlNBQxXhqLPHNahoHUF39SckYf9CqjRTAfQ/lo-que-dios-dice-en-cuanto-a-obedecer-a-tus-padres+0793.jpg"
+            width="530"></div>
+    <p class="p5"> <em>La mayoría de los hijos no obedecemos como se debe</em>: los hacemos quedar en vergüenza a
+        nuestros padres, con
+        los malos comportamientos, los deshonramos faltándoles el respeto, etc. Lo que quiero decir con esto, es que
+        si nos
+        pusiéramos a pensar en el pasado, en todo lo que hemos hecho mal, llegamos a un punto que nos arrepentimos y
+        decimos <¡pero que he hecho!> Nos sorprendemos y prometemos no volver a cometer el mismo error, pero después
+            de un tiempo, actuamos incluso peor.<br> <strong> hijos fuimos creados para honrrar a los padres y eso
+                involucra,
+                obediencia, respeto, comunicación, ayuda y sumisión</strong> <em>solo cuando acatemos el madato
+                biblico, Que es <strog>honrrar y obedecer</strog> nos ira bien en todo. y Dios promete alargar
+                nuestros días.</em>
+    </p>
+    <center>
+        <p><em class="o">Para más información:<a target="_blank"
+                    href="https://www.gotquestions.org/Espanol/obedecer-a-los-padres.html">Got
+                    Questions</a></em><br><br>
+    </center>
+    </p>
+    <center><h3 class="subt1" , id="cuarto-punto">En Resumen</h3></center>
+    <center><div id="resumen">
+        <P class="p6"><center><img src="http://mak-100.com/wp-content/uploads/2014/09/valores-de-una-familia-feliz-680x380.jpg"
+            width="530"></center><strong><br> Una verdadera familia.</strong><br><br> es aquella que se alinea con los principios
+            bíblicos y en la que cada miembro entiende y
+            cumple con la función que Dios le ha dado.<br> La familia no es una institución establecida por el hombre.
+            Fue
+            creada por Dios para el beneficio del hombre, y él es responsable de administrarla. La unidad familiar
+            bíblica
+            fundamental, está compuesta por un hombre, una mujer (su cónyuge) y sus hijos.<br>
+            Es muy importante que guardemos el modelo que Dios estableció; un modelo correcto para que la familia
+            funcione,
+            y el bien que se obtiene dentro del hogar no es solo para una familia en particular, sino que se aporta el
+            binestar a la sociedad, y aun cuando mucha gente no entiende el valor de una familia, todos procedemos de
+            una
+            familia. Y puedo decir que Él nos ha bendecido al ser parte de una, ¿no crees tú que nos ha bendecido en
+            gran
+            manera?
+    </div></center><br><br>
+    </P>
+
+    <p id="libros">Libros Relacionados Para Leer En Línea o descargar el Pdf gratis.</p>
+
+    <div id="tab2">
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th class="th1"><em>Teología de <br>la família <br></em></th>
+                    <th class="th1"><em>Paternidad<br></em></th>
+                    <th class="th1"><em>Deberes de los Hijos <br> y Los Padres<br></em> </th>
+                    <th class="th1"><em>Hogar consagrado <br> a Dios<br></em> </th>
+                    <th class="th1"><em>Los deberes de <br>esposos y esposas<br></em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td1"><a target="_blank"
+                            href="https://www.chapellibrary.org/book/totfs/teologia-de-la-familia">
+                            <img src="https://imgv2-1-f.scribdassets.com/img/document/402832816/original/32fba8a26c/1614507717?v=1"
+                                width="100"></a></td>
+
+
+
+                    <td class="td1"><a target="_blank" href="https://www.chapellibrary.org/book/fathfgs/paternidad">
+                            <img src="https://m.media-amazon.com/images/I/51xrBLONZjL.jpg" width="100"></a></td>
+
+
+                    <td class="td1"><a target="_blank"
+                            href="https://www.chapellibrary.org/book/docas/los-deberes-de-hijos-y-padres-adamsrichard">
+                            <img src="https://www.chapellibrary.org:8443/images/covers/booklets/docas.jpg?width=250"
+                                width="100"></a></td>
+
+
+                    <td class="td1"> <a target="_blank"
+                            href="https://www.chapellibrary.org/book/ghomfgs/el-hogar-consagrado-a-dios">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51792WE5OoL._SX342_SY445_QL70_ML2_.jpg"
+                                width="100"></a></td>
+
+
+                    <td class="td1"><a target="_blank"
+                            href="https://www.chapellibrary.org/book/dohas/los-deberes-de-esposos-y-esposas-steelerichard">
+                            <img src="https://www.chapellibrary.org:8443/images/covers/booklets/dohas.jpg?width=250"
+                                width="100"></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br><br>
+
+
+    <center>
+        <h2 class="IM">Deil Isaí Millán</h2>
+    </center>
+<h2 class="familiaisa"><a target="_blank" href="https://isartemil.blogspot.com/2021/04/tarea-semana-6.html">Mi Familia</a></h2>
+<p class="fin">><br><br><br></p>
+    <script> src = "js/jquery-3.6.0.min.js"</script>
+    <script> src = "js/bootstrap.min.js"</script>
+</body>
+</html>
